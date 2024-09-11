@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQ-Test-Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="create-box">
+      <h1>IQ-Test-Game</h1>
+      <h2>Create box 2-10 then press <b>"GO"</b> to start your game.</h2>
+      <input type="number" id="userInput" placeholder="Create-Box 2-10" />
+      <br>
+      <button id="btn">GO</button>
+    </div>
+    <div id="reset">
+      <button onclick="reloadPage()">Reset</button>
+    </div>
+    <div id="container"></div>
+    <audio id="clickSound" src="sound/click.wav"></audio>
+    <audio id="clickSound2" src="sound/game-over.wav"></audio>
+    <audio id="clickSound3" src="sound/gamesound.wav"></audio>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'lato';
+    text-align: center;
+    /* background-color: rgba(42, 174, 70, 0.547); */
+    background: url("../img/crystal.jfif");
+}
+
+h1{
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+h2{
+    color: white;
+}
+
+#userInput{
+    width: 20rem;
+    height: 3rem;
+    border: 10px solid red;
+    border-radius: 25%;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: black;
+}
+
+textarea:focus, input:focus {
+    color: #ff0000;
+}
+
+::placeholder {
+    color: white;
+  }
+
+#btn{
+    width: 10rem;
+    height: 3rem;
+    background-color: red;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 7px solid black;
+    border-radius: 25%;
+}
+
+#btn:hover{
+    background-color: black;
+    border: 7px solid red;
+    color: white;
+    cursor: pointer;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border-radius: 35%;
+    border: 10px solid black;
+    margin: 1rem;
+}
+
+.box:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.box:hover{
+    box-shadow: 2px 2px 10px red;
+}
+
+.flash {
+    animation: systemflashAnimation 1s ease;
+}
+
+@keyframes systemflashAnimation {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.userflash {
+    animation: userflashAnimation 1s ease;
+}
+
+@keyframes userflashAnimation {
+
+    0%,
+    100% {
+        opacity: 1;
+        background-color: initial;
+        /* Keeps the original background color */
+    }
+
+    50% {
+        opacity: 0;
+        background-color: rgb(6, 235, 6);
+        /* Changes background color to green */
+    }
+}
+
+
+#reset{
+    display:none;
+    width: 10rem;
+    height: 3rem;
+    background-color: red;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 7px solid black;
+    border-radius: 25%;
+}
